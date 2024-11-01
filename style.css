@@ -1,0 +1,71 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: rgb(8, 6, 6);
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    height: calc(100vh - 100px); /* Adjust based on the height of the navbar */
+
+}
+
+.job-list {
+    flex: 1;
+    margin-right: 20px;
+    max-height: 100%; /* Use full container height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    border-radius: 7px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline-style: solid;
+    outline-color: #7AA150;
+    outline-width: medium;
+}
+
+.job-card:hover {
+    background-color: #B8D056;
+    transition: background-color 0.3s;
+}
+
+.job-details {
+    flex: 2;
+    background-color: #ffffff;
+    color: rgb(9, 8, 8);
+    padding: 20px;
+    outline-style: solid;
+    outline-color: #7AA150;
+    outline-width: medium;
+    border-radius: 8px;
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+}
